@@ -1,14 +1,22 @@
 {
   "name": "postman-newman-jenkins",
   "version": "1.0.0",
-  "description": "Project for sorting Postman tests",
+  "description": "Project for storing Postman tests",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api-tests-production": "newman run tests/Jsonplaceholder.com.postman_collection.jar"
   },
-  "author": "Leandra Sellar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leandra87/postman-newman-jenkins.git"
+  },
+  "author": "Leanra Sellar",
+  "bugs": {
+    "url": "https://github.com/Leandra87/postman-newman-jenkins/issues"
+  },
+  "homepage": "https://github.com/Leandra87/postman-newman-jenkins#readme",
   "dependencies": {
     "newman": "^4.5.4"
   }
